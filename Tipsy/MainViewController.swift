@@ -1,8 +1,9 @@
 import SnapKit
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
+    //MARK: properties
     var secondView = UIView()
     var infoStackView = UIStackView()
     var enterBillTotalLabel = UILabel()
@@ -18,23 +19,28 @@ class ViewController: UIViewController {
     var stepper = UIStepper()
     var numStepper = UILabel()
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        setupInfoStackView()
-        setupSecondView()
-        setupEnterBillTotalLabel()
-        setupEgTextField()
-        setupCalculateStackView()
-        print("fdss")
-        setupSelectTipLabel()
-        setupButtonsPersent()
-        setupButtonsPersentSV()
-        print("safsa")
-        
+}
+
+
+
+extension MainViewController {
+    private func setupSecondView() {
+        view.addSubview(secondView)
+        secondView.backgroundColor = #colorLiteral(red: 0.8453745246, green: 0.976534903, blue: 0.9226958752, alpha: 1)
+        secondView.snp.makeConstraints { make in
+            
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.top.equalTo(infoStackView.snp.bottom).offset(40)
+        }
     }
-    
+}
+
+
+
+
+extension MainViewController {
     private func setupInfoStackView() {
         
         view.addSubview(infoStackView)
@@ -75,24 +81,14 @@ class ViewController: UIViewController {
             make.left.right.equalToSuperview()
         }
     }
-    
-    
-    
-    
-    
-    private func setupSecondView() {
-        view.addSubview(secondView)
-        secondView.backgroundColor = #colorLiteral(red: 0.8453745246, green: 0.976534903, blue: 0.9226958752, alpha: 1)
-        secondView.snp.makeConstraints { make in
-            
-            make.left.equalToSuperview()
-            make.right.equalToSuperview()
-            make.bottom.equalToSuperview()
-            make.top.equalTo(infoStackView.snp.bottom).offset(40)
-        }
-    }
-    
-    
+}
+
+
+
+
+
+
+extension MainViewController {
     private func setupCalculateStackView() {
         
         secondView.addSubview(calculateStackView)
@@ -111,46 +107,16 @@ class ViewController: UIViewController {
         calculateStackView.addArrangedSubview(buttonsPersentSV)
         
     }
+}
+
+
+
+
+extension MainViewController {
     
-    func setupSelectTipLabel() {
-        selectTipLabel.text = "Select tip"
-        selectTipLabel.font = UIFont(name: egTextField.font!.fontName, size: 25)
-        selectTipLabel.textColor = #colorLiteral(red: 0.753274262, green: 0.7732002139, blue: 0.7771559358, alpha: 1)
-        selectTipLabel.snp.makeConstraints { make in
-            make.width.equalTo(293)
-            make.centerX.equalToSuperview()
-            
-            
-        }
-    }
-    func setupButtonsPersentSV() {
-        buttonsPersentSV.backgroundColor = .blue
-        buttonsPersentSV.axis = .horizontal
-        buttonsPersentSV.alignment = .fill
-        buttonsPersentSV.distribution = .fillProportionally
-        buttonsPersentSV.spacing = 0
-        buttonsPersentSV.addArrangedSubview(zeroPerButton)
-        buttonsPersentSV.addArrangedSubview(tenPerButton)
-        buttonsPersentSV.addArrangedSubview(twentyPerButton)
-    }
+}extension MainViewController {
     
-    func setupButtonsPersent() {
-        zeroPerButton.titleLabel?.text = "0%"
-        tenPerButton.titleLabel?.text = "10%"
-        twentyPerButton.titleLabel?.text = "20%"
-//        zeroPerButton.snp.makeConstraints { make in
-//            make.width.equalTo(95.33)
-//            make.height.equalTo(buttonsPersentSV.snp.height)
-//        }
-//        tenPerButton.snp.makeConstraints { make in
-//            make.width.equalTo(163.33)
-//            make.height.equalTo(buttonsPersentSV.snp.height)
-//        }
-//        twentyPerButton.snp.makeConstraints { make in
-//            make.width.equalTo(95.33)
-//            make.height.equalTo(buttonsPersentSV.snp.height)
-//        }
-    }
-    
+}extension MainViewController {
     
 }
+
