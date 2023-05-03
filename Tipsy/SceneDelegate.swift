@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Tipsy
-//
-//  Created by Александр Андреев on 01.05.2023.
-//
-
 import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?

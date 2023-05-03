@@ -14,6 +14,9 @@
 		1A51111E29FF85B9008015A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A51111C29FF85B9008015A4 /* LaunchScreen.storyboard */; };
 		1A51112729FF8807008015A4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A51112629FF8807008015A4 /* SnapKit */; };
 		1ADAB1D32A016684004D0EFC /* MainVС.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAB1D22A016684004D0EFC /* MainVС.swift */; };
+		1ADAB1D92A029F57004D0EFC /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAB1D82A029F57004D0EFC /* Resources.swift */; };
+		1ADAB1DD2A02A4E7004D0EFC /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAB1DC2A02A4E7004D0EFC /* ResultVC.swift */; };
+		1ADAB1DF2A02A4FE004D0EFC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAB1DE2A02A4FE004D0EFC /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		1A51111D29FF85B9008015A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A51111F29FF85B9008015A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ADAB1D22A016684004D0EFC /* MainVС.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVС.swift"; sourceTree = "<group>"; };
+		1ADAB1D82A029F57004D0EFC /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		1ADAB1DC2A02A4E7004D0EFC /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		1ADAB1DE2A02A4FE004D0EFC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +64,66 @@
 		1A51111029FF85B7008015A4 /* Tipsy */ = {
 			isa = PBXGroup;
 			children = (
+				1ADAB1D72A029F02004D0EFC /* Resources */,
+				1ADAB1D62A029E95004D0EFC /* Model */,
+				1ADAB1D52A029E8E004D0EFC /* View */,
+				1ADAB1D42A029E6D004D0EFC /* Controllers */,
 				1A51111129FF85B7008015A4 /* AppDelegate.swift */,
 				1A51111329FF85B7008015A4 /* SceneDelegate.swift */,
 				1A51111A29FF85B9008015A4 /* Assets.xcassets */,
 				1A51111C29FF85B9008015A4 /* LaunchScreen.storyboard */,
 				1A51111F29FF85B9008015A4 /* Info.plist */,
+			);
+			path = Tipsy;
+			sourceTree = "<group>";
+		};
+		1ADAB1D42A029E6D004D0EFC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1ADAB1DB2A02A4CC004D0EFC /* ResultVC */,
+				1ADAB1DA2A02A484004D0EFC /* MainVC */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1ADAB1D52A029E8E004D0EFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1ADAB1D62A029E95004D0EFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1ADAB1D72A029F02004D0EFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1ADAB1D82A029F57004D0EFC /* Resources.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1ADAB1DA2A02A484004D0EFC /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
 				1A51111529FF85B7008015A4 /* MainViewController.swift */,
 				1ADAB1D22A016684004D0EFC /* MainVС.swift */,
 			);
-			path = Tipsy;
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		1ADAB1DB2A02A4CC004D0EFC /* ResultVC */ = {
+			isa = PBXGroup;
+			children = (
+				1ADAB1DC2A02A4E7004D0EFC /* ResultVC.swift */,
+				1ADAB1DE2A02A4FE004D0EFC /* ResultViewController.swift */,
+			);
+			name = ResultVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +203,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A51111629FF85B7008015A4 /* MainViewController.swift in Sources */,
+				1ADAB1DD2A02A4E7004D0EFC /* ResultVC.swift in Sources */,
+				1ADAB1DF2A02A4FE004D0EFC /* ResultViewController.swift in Sources */,
 				1A51111229FF85B7008015A4 /* AppDelegate.swift in Sources */,
 				1A51111429FF85B7008015A4 /* SceneDelegate.swift in Sources */,
+				1ADAB1D92A029F57004D0EFC /* Resources.swift in Sources */,
 				1ADAB1D32A016684004D0EFC /* MainVС.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

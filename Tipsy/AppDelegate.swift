@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Tipsy
-//
-//  Created by Александр Андреев on 01.05.2023.
-//
-
 import UIKit
 
 @main
