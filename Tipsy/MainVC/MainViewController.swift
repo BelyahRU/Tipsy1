@@ -22,8 +22,8 @@ class MainViewController: MainVC {
         setupChooseSplitLabel()
         
         setupStepperStackView()
-        setupNumStepper()
         setupStepper()
+        setupNumStepper()
         setupCalculateButton()
     }
 }
