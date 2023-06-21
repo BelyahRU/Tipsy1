@@ -8,4 +8,9 @@ enum Resources {
         static let grayColor = "textColor"
         static let backgroundColor = "backgroundColor"
     }
+    
+    enum fontName {
+        static let system = "Helvetica Neue"
+        static let systemBold = "Helvetica Neue Bold"
+    }
 }

@@ -1,8 +1,15 @@
-//
-//  ResultViewController.swift
-//  Tipsy
-//
-//  Created by Александр Андреев on 03.05.2023.
-//
+import UIKit
 
-import Foundation
+class ResultViewController: ResultVC {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        setupSecondView()
+        setupTotalPerPersonLabel()
+        setupResultLabel()
+        setupInfoLabel()
+        setupRecalculateButton()
+    }
+    
+}
