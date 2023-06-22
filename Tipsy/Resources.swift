@@ -6,7 +6,7 @@ enum Resources {
         // static - чтобы можно было обращаться по имени класса
         static let greenColor = "greenColor"
         static let grayColor = "textColor"
-        static let backgroundColor = "backgroundColor"
+        static let backkgroundColor = "backgroundColor"
     }
     
     enum fontName {

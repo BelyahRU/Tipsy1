@@ -5,9 +5,8 @@ class MainVC: UIViewController, UITextFieldDelegate {
     
     //MARK: properties
     private var secondView = UIView()
-    private var infoStackView = UIStackView()
-    private var enterBillTotalLabel = UILabel()
-    var egTextField = UITextField()
+    private var infStackView = infoStackView()
+    
     private var calculateStackView = UIStackView()
     private var selectTipLabel = UILabel()
     private var zeroPerButton = UIButton(type: .system)
@@ -28,57 +27,16 @@ class MainVC: UIViewController, UITextFieldDelegate {
 extension MainVC {
     func setupInfoStackView() {
         
-        view.addSubview(infoStackView)
-        infoStackView.backgroundColor = .white
-        infoStackView.axis = .vertical
-        infoStackView.spacing = 26
-        infoStackView.alignment = .center
-        
-        
-        infoStackView.snp.makeConstraints { make in
+        view.addSubview(infStackView)
+        infStackView.snp.makeConstraints { make in
             make.left.equalToSuperview()
             make.right.equalToSuperview()
             make.top.equalToSuperview().offset(69)
             make.bottom.equalToSuperview().offset(-679)
         }
         
-        infoStackView.addArrangedSubview(enterBillTotalLabel)
-        infoStackView.addArrangedSubview(egTextField)
-    }
-//    @objc func dismissKeyboard() {
-//           view.endEditing(true)
-//       }
-//    
-    func setupEnterBillTotalLabel() {
-        enterBillTotalLabel.font = UIFont(name: Resources.fontName.system, size: 25)
-        enterBillTotalLabel.text = "Enter bill total"
-        enterBillTotalLabel.alpha = 1
-        enterBillTotalLabel.textColor = UIColor(named: Resources.Colors.grayColor)
-        enterBillTotalLabel.snp.makeConstraints { make in
-            make.width.equalTo(293)
-            make.height.equalTo(30)
-        }
-    }
-    
-    func setupEgTextField() {
-        egTextField.placeholder = "e.g. 123.56"
-        egTextField.font = UIFont(name: Resources.fontName.system, size: 40)
-        egTextField.tintColor = UIColor(red: 0/255, green: 176/255, blue: 107/255, alpha: 1)
-        egTextField.textAlignment = .center
-    
-        egTextField.textColor = UIColor(named: Resources.Colors.greenColor)
-        egTextField.snp.makeConstraints { make in
-            make.left.right.equalToSuperview()
-        }
-        egTextField.keyboardType = .decimalPad
         
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
-    
 }
 
 
@@ -86,13 +44,16 @@ extension MainVC {
 extension MainVC {
     func setupSecondView() {
         view.addSubview(secondView)
-        secondView.backgroundColor = UIColor (named: Resources.Colors.backgroundColor)
+        secondView.backgroundColor = UIColor (named: Resources.Colors.backkgroundColor)
+        //secondView.backgroundColor = .green
+        
+        
         secondView.snp.makeConstraints { make in
             
             make.left.equalToSuperview()
             make.right.equalToSuperview()
             make.bottom.equalToSuperview()
-            make.top.equalTo(infoStackView.snp.bottom).offset(40)
+            make.top.equalTo(infStackView.snp.bottom).offset(40)
         }
     }
 }
@@ -270,7 +231,7 @@ extension MainVC {
     
     // fix
     func setupNumStepper() {
-        numStepper.font = UIFont(name: egTextField.font!.fontName, size: 35)
+        numStepper.font = UIFont(name: Resources.fontName.system, size: 35)
         //text
         numStepper.text = String(Int(stepper.value))
         numStepper.textColor = UIColor(named: Resources.Colors.greenColor)
@@ -291,20 +252,20 @@ extension MainVC {
         calculateButton.backgroundColor = UIColor(named: Resources.Colors.greenColor)
         calculateButton.setTitle("Calculate", for: .normal)
         calculateButton.setTitleColor(.white, for: .normal)
-        calculateButton.titleLabel?.font = UIFont(name: egTextField.font!.fontName, size: 35)
+        calculateButton.titleLabel?.font = UIFont(name: Resources.fontName.system, size: 35)
         calculateButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.height.equalTo(54)
             make.width.equalTo(200)
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }
-        calculateButton.addTarget(self, action: #selector(touchButton), for: .touchUpInside)
+//        calculateButton.addTarget(self, action: #selector(touchButton), for: .touchUpInside)
         
     }
-    @objc func touchButton() {
-        var bill = Double(egTextField.text!)!
-        print(bill)
-    }
+//    @objc func touchButton() {
+//        var bill = Double(egTextField.text!)!
+//        print(bill)
+//    }
     
 }
 

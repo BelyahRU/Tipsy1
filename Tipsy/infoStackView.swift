@@ -52,8 +52,8 @@ class infoStackView: UIStackView {
     }
     
     func setupSubview() {
-        addArrangedSubview(egTextField)
         addArrangedSubview(enterBillTotalLabel)
+        addArrangedSubview(egTextField)
     }
     
     func setupConstraints() {
@@ -61,10 +61,10 @@ class infoStackView: UIStackView {
         enterBillTotalLabel.snp.makeConstraints { make in
             make.width.equalTo(293)
             make.height.equalTo(30)
-        }
-        egTextField.snp.makeConstraints { make in
-            make.left.right.equalToSuperview()
-        }
+    }
+//        egTextField.snp.makeConstraints { make in
+//            make.left.right.equalTo(self)
+//        }
         
     }
     
@@ -77,3 +77,41 @@ class infoStackView: UIStackView {
 
     
 }
+
+
+
+//    @objc func dismissKeyboard() {
+//           view.endEditing(true)
+//       }
+//
+//    func setupEnterBillTotalLabel() {
+//        enterBillTotalLabel.font = UIFont(name: Resources.fontName.system, size: 25)
+//        enterBillTotalLabel.text = "Enter bill total"
+//        enterBillTotalLabel.alpha = 1
+//        enterBillTotalLabel.textColor = UIColor(named: Resources.Colors.grayColor)
+//        enterBillTotalLabel.snp.makeConstraints { make in
+//            make.width.equalTo(293)
+//            make.height.equalTo(30)
+//        }
+//    }
+//
+//    func setupEgTextField() {
+//        egTextField.placeholder = "e.g. 123.56"
+//        egTextField.font = UIFont(name: Resources.fontName.system, size: 40)
+//        egTextField.tintColor = UIColor(red: 0/255, green: 176/255, blue: 107/255, alpha: 1)
+//        egTextField.textAlignment = .center
+//
+//        egTextField.textColor = UIColor(named: Resources.Colors.greenColor)
+//        egTextField.snp.makeConstraints { make in
+//            make.left.right.equalToSuperview()
+//        }
+//        egTextField.keyboardType = .decimalPad
+//
+//    }
+//
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        self.view.endEditing(true)
+//    }
+//
+//
+

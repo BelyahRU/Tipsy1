@@ -8,9 +8,9 @@ class MainViewController: MainVC {
         view.backgroundColor = .white
         setupInfoStackView()
         setupSecondView()
-        setupEnterBillTotalLabel()
-        setupEgTextField()
-        self.egTextField.delegate = self
+        //setupEnterBillTotalLabel()
+        //setupEgTextField()
+        //self.egTextField.delegate = self
         
         setupCalculateStackView()
         setupSelectTipLabel()

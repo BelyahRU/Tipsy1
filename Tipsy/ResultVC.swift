@@ -17,8 +17,8 @@ extension ResultVC {
     
     func setupSecondView() {
         view.addSubview(secondView)
-        secondView.backgroundColor = UIColor(named: Resources.Colors.backgroundColor)
-        
+        secondView.backgroundColor = UIColor(named: Resources.Colors.backkgroundColor)
+        //secondView.backgroundColor = .black
         secondView.snp.makeConstraints { make in
             make.left.equalToSuperview()
             make.right.equalToSuperview()
