@@ -45,10 +45,10 @@ extension MainVC {
         infoStackView.addArrangedSubview(enterBillTotalLabel)
         infoStackView.addArrangedSubview(egTextField)
     }
-    @objc func dismissKeyboard() {
-           view.endEditing(true)
-       }
-    
+//    @objc func dismissKeyboard() {
+//           view.endEditing(true)
+//       }
+//    
     func setupEnterBillTotalLabel() {
         enterBillTotalLabel.font = UIFont(name: Resources.fontName.system, size: 25)
         enterBillTotalLabel.text = "Enter bill total"

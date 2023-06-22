@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A076F1F2A44C84C00D8226E /* infoStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A076F1E2A44C84C00D8226E /* infoStackView.swift */; };
 		1A51111229FF85B7008015A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51111129FF85B7008015A4 /* AppDelegate.swift */; };
 		1A51111429FF85B7008015A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51111329FF85B7008015A4 /* SceneDelegate.swift */; };
 		1A51111629FF85B7008015A4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51111529FF85B7008015A4 /* MainViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A076F1E2A44C84C00D8226E /* infoStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = infoStackView.swift; path = Tipsy/infoStackView.swift; sourceTree = SOURCE_ROOT; };
 		1A51110E29FF85B7008015A4 /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A51111129FF85B7008015A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A51111329FF85B7008015A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		1ADAB1D52A029E8E004D0EFC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1A076F1E2A44C84C00D8226E /* infoStackView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				1A51111629FF85B7008015A4 /* MainViewController.swift in Sources */,
 				1ADAB1DD2A02A4E7004D0EFC /* ResultVC.swift in Sources */,
 				1ADAB1DF2A02A4FE004D0EFC /* ResultViewController.swift in Sources */,
+				1A076F1F2A44C84C00D8226E /* infoStackView.swift in Sources */,
 				1A51111229FF85B7008015A4 /* AppDelegate.swift in Sources */,
 				1A51111429FF85B7008015A4 /* SceneDelegate.swift in Sources */,
 				1ADAB1D92A029F57004D0EFC /* Resources.swift in Sources */,
