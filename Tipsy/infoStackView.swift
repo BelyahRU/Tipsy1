@@ -16,6 +16,10 @@ class infoStackView: UIStackView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupStackView()
+        setupEgTextField()
+        setupEnterBillTotalLabel()
+        setupConstraints()
+        setupSubview()
     }
     
     required init(coder: NSCoder) {
@@ -27,6 +31,13 @@ class infoStackView: UIStackView {
         backgroundColor = .white
         spacing = 26
         alignment = .center
+    }
+    
+    func setupEnterBillTotalLabel() {
+        enterBillTotalLabel.font = UIFont(name: Resources.fontName.system, size: 25)
+        enterBillTotalLabel.text = "Enter bill total"
+        enterBillTotalLabel.alpha = 1
+        enterBillTotalLabel.textColor = UIColor(named: Resources.Colors.grayColor)
     }
     
     func setupEgTextField() {
