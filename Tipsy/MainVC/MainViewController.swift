@@ -10,6 +10,7 @@ class MainViewController: MainVC {
         setupSecondView()
         setupEnterBillTotalLabel()
         setupEgTextField()
+        self.egTextField.delegate = self
         
         setupCalculateStackView()
         setupSelectTipLabel()
