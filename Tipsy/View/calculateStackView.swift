@@ -11,9 +11,16 @@ import UIKit
 
 class calculateStackView: UIStackView {
     
-    private lazy var selectTipLabel = {
+    private lazy var selectTipLabel: UILabel = {
+        let tipLabel = UILabel()
+        tipLabel.text = "Select tip"
+        tipLabel.font = UIFont(name: Resources.fontName.system, size: 25)
+        tipLabel.textColor = UIColor(named: Resources.Colors.grayColor)
         
-    }
+        return tipLabel
+    }()
+    
+    private var butttonsPersentSV = UIStackView()
     
     
     override init(frame: CGRect) {

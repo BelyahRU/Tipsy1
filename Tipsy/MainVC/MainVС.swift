@@ -117,6 +117,7 @@ extension MainVC {
         buttonsPersentSV.addArrangedSubview(zeroPerButton)
         buttonsPersentSV.addArrangedSubview(tenPerButton)
         buttonsPersentSV.addArrangedSubview(twentyPerButton)
+        
         //Делаем центральную кнопку больше, а 2 другие одинаковые
         let widthConstraint = zeroPerButton.widthAnchor.constraint(equalTo: twentyPerButton.widthAnchor)
         widthConstraint.isActive = true
