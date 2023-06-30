@@ -9,20 +9,31 @@ import Foundation
 
 import UIKit
 
-class persentButton: UIButton {
+
+class CustomButton: UIButton {
+    
+    let color = UIColor(named: Resources.Colors.greenColor)
     
     
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    // вспомогательный инициализатор
+    convenience init(title: String, type: UIButton.ButtonType = .system) {
+        self.init(type: type)
+        setupButton(with: title)
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func setupPersentButton(_ button: UIButton, _ type: String) {
+    private func setupButton(with title: String) {
+        setTitle(title, for: .normal)
         titleLabel?.font = UIFont.systemFont(ofSize: 35)
-        setTitleColor(UIColor(named: Resources.Colors.greenColor), for: .normal)
+
+//        if title == "Calculate" || title == "Recalculate" {
+//            backgroundColor = color
+//            layer.cornerRadius = 10
+//            setTitleColor(.white, for: .normal)
+//        } else {
+//            tintColor = color
+//            setTitleColor(color, for: .normal)
+//        }
+        translatesAutoresizingMaskIntoConstraints = false
     }
 }
+

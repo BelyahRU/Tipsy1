@@ -13,29 +13,29 @@ class buttonsStackView: UIStackView {
     private lazy var zeroPerButton: UIButton = {
         
         let button = persentButton()
+        button.setTitle("0%", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
         button.setTitleColor(UIColor(named: Resources.Colors.greenColor), for: .normal)
-        button.setTitle("0%", for: .normal)
+        
         button.addTarget(self, action: #selector(zeroPressed), for: .touchUpInside)
         return button
     }()
     
     private lazy var tenPerButton: UIButton = {
         
-        let button = persentButton()
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-        button.backgroundColor = .red
-        button.setTitleColor(UIColor(named: Resources.Colors.greenColor), for: .normal)
+        let button = UIButton()
         button.setTitle("10%", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
+        button.setTitleColor(UIColor(named: Resources.Colors.greenColor), for: .normal)
         button.addTarget(self, action: #selector(tenPressed), for: .touchUpInside)
         return button
     }()
     private lazy var twentyPerButton: UIButton = {
         
-        let button = persentButton()
+        let button = UIButton()
+        button.setTitle("20%", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
         button.setTitleColor(UIColor(named: Resources.Colors.greenColor), for: .normal)
-        button.setTitle("20%", for: .normal)
         button.addTarget(self, action: #selector(twentyPressed), for: .touchUpInside)
         return button
     }()
@@ -77,23 +77,36 @@ class buttonsStackView: UIStackView {
     }
     
     func buttonPressed(_ button: UIButton) {
+//        button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
+//        button.backgroundColor = UIColor(named: Resources.Colors.greenColor)
+//        button.tintColor = UIColor(red: 0/255, green: 176/255, blue: 107/255, alpha: 1)
+//        button.setTitleColor(UIColor(red: 0/255, green: 176/255, blue: 107/255, alpha: 1), for: .normal)
+//        button.backgroundColor = UIColor(named: Resources.Colors.greenColor)
+//        button.setTitleColor(.white, for: .normal)
+//
+//        button.isSelected = true
         button.tintColor = UIColor(red: 0/255, green: 176/255, blue: 107/255, alpha: 1)
-        button.setTitleColor(UIColor(named: Resources.Colors.greenColor), for: .normal)
+        button.setTitleColor(.green, for: .normal)
+        
         //Создает нужный нам эффект
         button.isSelected = true
         print(1)
     }
     
     @objc func tenPressed() {
-        buttonPressed(tenPerButton)
+       // buttonPressed(tenPerButton)
+        tenPerButton.tintColor = UIColor(red: 0/255, green: 176/255, blue: 107/255, alpha: 1)
+        tenPerButton.setTitleColor(UIColor(named: Resources.Colors.greenColor), for: .normal)
+        tenPerButton.isSelected = true
         zeroPerButton.isSelected = false
         twentyPerButton.isSelected = false
+        print("fd")
     }
     
     @objc func zeroPressed() {
         buttonPressed(zeroPerButton)
-        twentyPerButton.isSelected = false
-        tenPerButton.isSelected = false
+        twentyPerButton.isSelected = true
+        tenPerButton.isSelected = true
     }
     @objc func twentyPressed() {
         buttonPressed(twentyPerButton)

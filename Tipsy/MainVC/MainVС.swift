@@ -44,8 +44,8 @@ extension MainVC {
 extension MainVC {
     func setupSecondView() {
         view.addSubview(secondView)
-        secondView.backgroundColor = UIColor (named: Resources.Colors.backkgroundColor)
-        //secondView.backgroundColor = .green
+//        secondView.backgroundColor = UIColor (named: Resources.Colors.backkgroundColor)
+        secondView.backgroundColor = .clear
         
         
         secondView.snp.makeConstraints { make in

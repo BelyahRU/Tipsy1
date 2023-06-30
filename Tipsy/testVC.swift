@@ -18,7 +18,7 @@ class testVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = .white
         setupInfoStackView()
         setupButtonsPersentSV()
     }
@@ -42,7 +42,7 @@ extension testVC {
     
     func setupButtonsPersentSV() {
         view.addSubview(buttonsSV)
-        buttonsSV.backgroundColor = .black
+        buttonsSV.backgroundColor = .clear
         buttonsSV.snp.makeConstraints { make in
             make.top.equalTo(infStackView.snp.bottom)
             make.height.equalTo(54)
