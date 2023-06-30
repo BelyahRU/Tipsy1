@@ -6,7 +6,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
     //MARK: properties
     private var secondView = UIView()
     private var infStackView = infoStackView()
-    
+    private var secondVieww = ssecondView()
     private var calculateStackView = UIStackView()
     private var selectTipLabel = UILabel()
     private var zeroPerButton = UIButton(type: .system)

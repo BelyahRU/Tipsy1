@@ -25,14 +25,14 @@ class CustomButton: UIButton {
         setTitle(title, for: .normal)
         titleLabel?.font = UIFont.systemFont(ofSize: 35)
 
-//        if title == "Calculate" || title == "Recalculate" {
-//            backgroundColor = color
-//            layer.cornerRadius = 10
-//            setTitleColor(.white, for: .normal)
-//        } else {
-//            tintColor = color
-//            setTitleColor(color, for: .normal)
-//        }
+        if title == "Calculate" || title == "Recalculate" {
+            backgroundColor = color
+            layer.cornerRadius = 10
+            setTitleColor(.white, for: .normal)
+        } else {
+            tintColor = color
+            setTitleColor(color, for: .normal)
+        }
         translatesAutoresizingMaskIntoConstraints = false
     }
 }

@@ -8,11 +8,15 @@
 import Foundation
 
 import UIKit
-class secondView: UIView {
+class ssecondView: UIView {
+    
+    private lazy var calculateSV = calculateStackView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        addSubviews()
         setupSecondView()
+        setupConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -20,7 +24,20 @@ class secondView: UIView {
     }
     
     func setupSecondView() {
-        backgroundColor = UIColor (named: Resources.Colors.backkgroundColor)
+        backgroundColor = UIColor(named: Resources.Colors.backgroundColor)
     }
     
+    func setupConstraints() {
+        //calculateSV.backgroundColor = .black
+        calculateSV.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(20)
+            make.right.equalToSuperview().offset(-20)
+            make.top.equalToSuperview().offset(20)
+            make.bottom.equalTo(-398)
+        }
+    }
+    
+    func addSubviews() {
+        addSubview(calculateSV)
+    }
 }
