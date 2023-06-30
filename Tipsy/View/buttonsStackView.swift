@@ -12,11 +12,7 @@ class buttonsStackView: UIStackView {
     
     private lazy var zeroPerButton: UIButton = {
         
-        let button = persentButton()
-        button.setTitle("0%", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-        button.setTitleColor(UIColor(named: Resources.Colors.greenColor), for: .normal)
-        
+        let button = CustomButton(title: "0%")
         button.addTarget(self, action: #selector(zeroPressed), for: .touchUpInside)
         return button
     }()
