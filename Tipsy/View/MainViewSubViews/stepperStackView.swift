@@ -2,7 +2,7 @@ import UIKit
 
 class stepperStackView : UIStackView {
     
-    private lazy var stepper: UIStepper = {
+    lazy var stepper: UIStepper = {
         let stepper = UIStepper()
         stepper.backgroundColor = .clear
         stepper.minimumValue = 1
@@ -13,7 +13,7 @@ class stepperStackView : UIStackView {
         return stepper
     }()
     
-    private lazy var numStepper: UILabel = {
+    lazy var numStepper: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: Resources.fontName.system, size: 35)
         //text

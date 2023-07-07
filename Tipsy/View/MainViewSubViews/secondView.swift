@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 class ssecondView: UIView {
     
-    private lazy var calculateSV = calculateStackView()
+    var calculateSV = calculateStackView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)

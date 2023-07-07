@@ -20,7 +20,7 @@ class infoStackView: UIStackView {
     }()
     
     
-    private var egTextField: UITextField = {
+    var egTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "e.g. 123.56"
         textField.font = UIFont(name: Resources.fontName.system, size: 40)

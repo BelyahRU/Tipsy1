@@ -28,9 +28,9 @@ class calculateStackView: UIStackView {
         return label
     }()
     
-    private var butttonsPersentSV = buttonsStackView()
+    var butttonsPersentSV = buttonsStackView()
     
-    private var stepperSV = stepperStackView()
+    var stepperSV = stepperStackView()
     
     
     override init(frame: CGRect) {

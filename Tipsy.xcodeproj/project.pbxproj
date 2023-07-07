@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A076F1F2A44C84C00D8226E /* infoStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A076F1E2A44C84C00D8226E /* infoStackView.swift */; };
 		1A076F2A2A45107F00D8226E /* secondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A076F292A45107F00D8226E /* secondView.swift */; };
 		1A076F2C2A4BC97600D8226E /* calculateStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A076F2B2A4BC97600D8226E /* calculateStackView.swift */; };
 		1A076F2E2A4CD83200D8226E /* buttonsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A076F2D2A4CD83200D8226E /* buttonsStackView.swift */; };
 		1A076F302A4CE68400D8226E /* button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A076F2F2A4CE68400D8226E /* button.swift */; };
 		1A076F322A4CEADC00D8226E /* testVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A076F312A4CEADC00D8226E /* testVC.swift */; };
 		1A0C1AC52A4EA3D90077CAEF /* stepperStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0C1AC42A4EA3D90077CAEF /* stepperStackView.swift */; };
+		1A0C1AC82A4EAC4D0077CAEF /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0C1AC72A4EAC4D0077CAEF /* Calculator.swift */; };
 		1A51111229FF85B7008015A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51111129FF85B7008015A4 /* AppDelegate.swift */; };
 		1A51111429FF85B7008015A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51111329FF85B7008015A4 /* SceneDelegate.swift */; };
 		1A51111629FF85B7008015A4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51111529FF85B7008015A4 /* MainViewController.swift */; };
 		1A51111B29FF85B9008015A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A51111A29FF85B9008015A4 /* Assets.xcassets */; };
 		1A51111E29FF85B9008015A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A51111C29FF85B9008015A4 /* LaunchScreen.storyboard */; };
 		1A51112729FF8807008015A4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A51112629FF8807008015A4 /* SnapKit */; };
+		1AC6D37B2A5830AC005938E9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC6D37A2A5830AC005938E9 /* MainView.swift */; };
+		1AC6D37D2A5836A6005938E9 /* infoStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC6D37C2A5836A6005938E9 /* infoStackView.swift */; };
 		1ADAB1D32A016684004D0EFC /* MainVС.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAB1D22A016684004D0EFC /* MainVС.swift */; };
 		1ADAB1D92A029F57004D0EFC /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAB1D82A029F57004D0EFC /* Resources.swift */; };
 		1ADAB1DD2A02A4E7004D0EFC /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAB1DC2A02A4E7004D0EFC /* ResultVC.swift */; };
@@ -27,13 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A076F1E2A44C84C00D8226E /* infoStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = infoStackView.swift; path = Tipsy/infoStackView.swift; sourceTree = SOURCE_ROOT; };
 		1A076F292A45107F00D8226E /* secondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondView.swift; sourceTree = "<group>"; };
 		1A076F2B2A4BC97600D8226E /* calculateStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculateStackView.swift; sourceTree = "<group>"; };
 		1A076F2D2A4CD83200D8226E /* buttonsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonsStackView.swift; sourceTree = "<group>"; };
 		1A076F2F2A4CE68400D8226E /* button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = button.swift; sourceTree = "<group>"; };
 		1A076F312A4CEADC00D8226E /* testVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testVC.swift; sourceTree = "<group>"; };
 		1A0C1AC42A4EA3D90077CAEF /* stepperStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stepperStackView.swift; sourceTree = "<group>"; };
+		1A0C1AC72A4EAC4D0077CAEF /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		1A51110E29FF85B7008015A4 /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A51111129FF85B7008015A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A51111329FF85B7008015A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,8 @@
 		1A51111A29FF85B9008015A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A51111D29FF85B9008015A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A51111F29FF85B9008015A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AC6D37A2A5830AC005938E9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1AC6D37C2A5836A6005938E9 /* infoStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoStackView.swift; sourceTree = "<group>"; };
 		1ADAB1D22A016684004D0EFC /* MainVС.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVС.swift"; sourceTree = "<group>"; };
 		1ADAB1D82A029F57004D0EFC /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		1ADAB1DC2A02A4E7004D0EFC /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
@@ -59,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A0C1AC62A4EAC3A0077CAEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A0C1AC72A4EAC4D0077CAEF /* Calculator.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		1A51110529FF85B7008015A4 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +90,7 @@
 		1A51111029FF85B7008015A4 /* Tipsy */ = {
 			isa = PBXGroup;
 			children = (
+				1A0C1AC62A4EAC3A0077CAEF /* Model */,
 				1ADAB1D72A029F02004D0EFC /* Resources */,
 				1ADAB1D52A029E8E004D0EFC /* View */,
 				1ADAB1D42A029E6D004D0EFC /* Controllers */,
@@ -88,6 +101,19 @@
 				1A51111F29FF85B9008015A4 /* Info.plist */,
 			);
 			path = Tipsy;
+			sourceTree = "<group>";
+		};
+		1AC6D3792A583088005938E9 /* MainViewSubViews */ = {
+			isa = PBXGroup;
+			children = (
+				1AC6D37C2A5836A6005938E9 /* infoStackView.swift */,
+				1A076F292A45107F00D8226E /* secondView.swift */,
+				1A076F2B2A4BC97600D8226E /* calculateStackView.swift */,
+				1A076F2D2A4CD83200D8226E /* buttonsStackView.swift */,
+				1A076F2F2A4CE68400D8226E /* button.swift */,
+				1A0C1AC42A4EA3D90077CAEF /* stepperStackView.swift */,
+			);
+			path = MainViewSubViews;
 			sourceTree = "<group>";
 		};
 		1ADAB1D42A029E6D004D0EFC /* Controllers */ = {
@@ -103,12 +129,8 @@
 		1ADAB1D52A029E8E004D0EFC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A076F1E2A44C84C00D8226E /* infoStackView.swift */,
-				1A076F292A45107F00D8226E /* secondView.swift */,
-				1A076F2B2A4BC97600D8226E /* calculateStackView.swift */,
-				1A076F2D2A4CD83200D8226E /* buttonsStackView.swift */,
-				1A076F2F2A4CE68400D8226E /* button.swift */,
-				1A0C1AC42A4EA3D90077CAEF /* stepperStackView.swift */,
+				1AC6D37A2A5830AC005938E9 /* MainView.swift */,
+				1AC6D3792A583088005938E9 /* MainViewSubViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,10 +241,12 @@
 				1A0C1AC52A4EA3D90077CAEF /* stepperStackView.swift in Sources */,
 				1ADAB1DD2A02A4E7004D0EFC /* ResultVC.swift in Sources */,
 				1ADAB1DF2A02A4FE004D0EFC /* ResultViewController.swift in Sources */,
-				1A076F1F2A44C84C00D8226E /* infoStackView.swift in Sources */,
+				1AC6D37D2A5836A6005938E9 /* infoStackView.swift in Sources */,
 				1A076F2C2A4BC97600D8226E /* calculateStackView.swift in Sources */,
 				1A076F2E2A4CD83200D8226E /* buttonsStackView.swift in Sources */,
 				1A51111229FF85B7008015A4 /* AppDelegate.swift in Sources */,
+				1A0C1AC82A4EAC4D0077CAEF /* Calculator.swift in Sources */,
+				1AC6D37B2A5830AC005938E9 /* MainView.swift in Sources */,
 				1A51111429FF85B7008015A4 /* SceneDelegate.swift in Sources */,
 				1A076F322A4CEADC00D8226E /* testVC.swift in Sources */,
 				1A076F2A2A45107F00D8226E /* secondView.swift in Sources */,

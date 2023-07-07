@@ -29,6 +29,7 @@ class buttonsStackView: UIStackView {
         button.addTarget(self, action: #selector(twentyPressed), for: .touchUpInside)
         return button
     }()
+    var pressedButtonn: String = "0"
     
     
     
@@ -84,22 +85,29 @@ class buttonsStackView: UIStackView {
     }
     
     @objc func tenPressed() {
+        pressedButtonn = "10"
         buttonPressed(tenPerButton)
         zeroPerButton.isSelected = false
         twentyPerButton.isSelected = false
-        print("fd")
+        print(pressedButtonn)
     }
     
     @objc func zeroPressed() {
+        pressedButtonn = "0"
         buttonPressed(zeroPerButton)
         twentyPerButton.isSelected = false
         tenPerButton.isSelected = false
+        print(pressedButtonn)
     }
     @objc func twentyPressed() {
+        pressedButtonn = "20"
         buttonPressed(twentyPerButton)
         tenPerButton.isSelected = false
         zeroPerButton.isSelected = false
+        print(pressedButtonn)
     }
+    
+    
     
     func setupConstraints() {
         
