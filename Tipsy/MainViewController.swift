@@ -25,19 +25,24 @@ class MainViewController: UIViewController {
         mainView.calculateButton.addTarget(self, action: #selector(touchCalculate), for: .touchUpInside)
     }
     @objc func touchCalculate() {
-        let bill = mainView.infStackView.egTextField.text!
+        let bill = Double(mainView.infStackView.getBill()!)!
         
-        let countGuests = mainView.secondView.calculateSV.stepperSV.numStepper.text!
-        let typeButt = mainView.secondView.calculateSV.butttonsPersentSV.pressedButtonn
+        let countGuests = mainView.secondView.calculateSV.stepperSV.getCountGuests()
         
-        print(Int(countGuests)!)
-        print(Double(bill)!)
-        print(typeButt)
-        calculate.addBill(Double(bill)!)
-        calculate.addCountGuests(Int(countGuests)!)
+        let typeButt = mainView.secondView.calculateSV.butttonsPersentSV.getButton()
+        
+        
+        calculate.addBill(bill)
+        calculate.addCountGuests(countGuests)
         calculate.addTypePersentage(typeButt)
         
-        print(calculate.getAnswer())
+        
+        
+        let VC = testVC()
+        VC.countPeople = countGuests
+        VC.persent = typeButt
+        VC.result = calculate.getAnswer()
+        present(VC, animated: true)
     }
     
 }

@@ -23,12 +23,11 @@ class ssecondView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupSecondView() {
+    private func setupSecondView() {
         backgroundColor = UIColor(named: Resources.Colors.backgroundColor)
     }
     
-    func setupConstraints() {
-        //calculateSV.backgroundColor = .black
+    private func setupConstraints() {
         calculateSV.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
@@ -37,7 +36,7 @@ class ssecondView: UIView {
         }
     }
     
-    func addSubviews() {
+    private func addSubviews() {
         addSubview(calculateSV)
     }
 }

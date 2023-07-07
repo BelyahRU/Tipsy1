@@ -27,7 +27,6 @@ struct Calculator {
         
         if let number = Double(type) {
             tipPersentage = number / 100
-            print(tipPersentage)
         } else {
             print("Невозможно преобразовать строку в число.")
         }

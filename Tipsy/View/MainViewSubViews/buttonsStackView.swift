@@ -29,7 +29,7 @@ class buttonsStackView: UIStackView {
         button.addTarget(self, action: #selector(twentyPressed), for: .touchUpInside)
         return button
     }()
-    var pressedButtonn: String = "0"
+    private var pressedButtonn: String = "0"
     
     
     
@@ -45,7 +45,7 @@ class buttonsStackView: UIStackView {
     }
     
     
-    func setupButtonsStackView() {
+    private func setupButtonsStackView() {
         axis = . horizontal
         alignment = .fill
         distribution = .fillProportionally
@@ -53,7 +53,7 @@ class buttonsStackView: UIStackView {
         contentMode = .scaleToFill
     }
     
-    func setupSubview() {
+    private func setupSubview() {
         addArrangedSubview(zeroPerButton)
         addArrangedSubview(tenPerButton)
         addArrangedSubview(twentyPerButton)
@@ -67,21 +67,12 @@ class buttonsStackView: UIStackView {
         middleButtonWidthConstraint.isActive = true
     }
     
-    func buttonPressed(_ button: UIButton) {
-//        button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.backgroundColor = UIColor(named: Resources.Colors.greenColor)
-//        button.tintColor = UIColor(red: 0/255, green: 176/255, blue: 107/255, alpha: 1)
-//        button.setTitleColor(UIColor(red: 0/255, green: 176/255, blue: 107/255, alpha: 1), for: .normal)
-//        button.backgroundColor = UIColor(named: Resources.Colors.greenColor)
-//        button.setTitleColor(.white, for: .normal)
-//
-//        button.isSelected = true
+    private func buttonPressed(_ button: UIButton) {
         button.tintColor = UIColor(red: 0/255, green: 176/255, blue: 107/255, alpha: 1)
         button.setTitleColor(UIColor(named: Resources.Colors.greenColor), for: .normal)
         
         //Создает нужный нам эффект
         button.isSelected = true
-        print(1)
     }
     
     @objc func tenPressed() {
@@ -109,7 +100,7 @@ class buttonsStackView: UIStackView {
     
     
     
-    func setupConstraints() {
+    private func setupConstraints() {
         
         
         zeroPerButton.snp.makeConstraints { make in
@@ -124,6 +115,10 @@ class buttonsStackView: UIStackView {
             
             make.height.equalTo(54)
         }
+    }
+    
+    func getButton() -> String {
+        return pressedButtonn
     }
     
     

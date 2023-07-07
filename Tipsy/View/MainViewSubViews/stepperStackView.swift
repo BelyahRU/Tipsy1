@@ -2,7 +2,7 @@ import UIKit
 
 class stepperStackView : UIStackView {
     
-    lazy var stepper: UIStepper = {
+    private lazy var stepper: UIStepper = {
         let stepper = UIStepper()
         stepper.backgroundColor = .clear
         stepper.minimumValue = 1
@@ -13,7 +13,7 @@ class stepperStackView : UIStackView {
         return stepper
     }()
     
-    lazy var numStepper: UILabel = {
+    private lazy var numStepper: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: Resources.fontName.system, size: 35)
         //text
@@ -35,19 +35,19 @@ class stepperStackView : UIStackView {
         
     }
     
-    func setupStepperStackView() {
+    private func setupStepperStackView() {
         axis = .horizontal
         alignment = .fill
         distribution = .fill
         spacing = 27
     }
     
-    func addSubviews() {
+    private func addSubviews() {
         addArrangedSubview(numStepper)
         addArrangedSubview(stepper)
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         stepper.snp.makeConstraints { make in
             make.height.equalTo(29)
             make.width.equalTo(94)
@@ -60,5 +60,9 @@ class stepperStackView : UIStackView {
     
     @objc func stepperValueChanged() {
         numStepper.text = String(Int(stepper.value))
+    }
+    
+    func getCountGuests() -> Int {
+        return Int(numStepper.text!)!
     }
 }

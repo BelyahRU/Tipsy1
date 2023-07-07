@@ -44,23 +44,21 @@ class calculateStackView: UIStackView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupCalculateStackView() {
+    private func setupCalculateStackView() {
         axis = .vertical
         spacing = 26
         alignment = .center
         distribution = .fill
     }
     
-    func addSubviews() {
-//        addArrangedSubview(selectTipLabel)
-//        addArrangedSubview(butttonsPersentSV)
+    private func addSubviews() {
         addArrangedSubview(selectTipLabel)
         addArrangedSubview(butttonsPersentSV)
         addArrangedSubview(chooseSplitLabel)
         addArrangedSubview(stepperSV)
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         selectTipLabel.snp.makeConstraints { make in
             
             make.width.equalTo(293)
